@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JEE Physics Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h2>Welcome, <span id="student"></span></h2>
+<p>⏱ Time Left: <span id="time">10:00</span></p>
+</header>
+
+<!-- STUDENT DISCUSSION -->
+<section class="students">
+    <h3>👩‍🎓👨‍🎓 Students Discussing Physics</h3>
+    <div class="student-row">
+        <img src="images/student1.jpg">
+        <img src="images/student2.jpg">
+        <img src="images/student3.jpg">
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video">
+<iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+</section>
+
+<!-- QUIZ -->
+<section class="quiz-card">
+<h3 id="chapter"></h3>
+<h2 id="question"></h2>
+
+<button onclick="check(0)" class="opt"></button>
+<button onclick="check(1)" class="opt"></button>
+<button onclick="check(2)" class="opt"></button>
+<button onclick="check(3)" class="opt"></button>
+
+<p id="res"></p>
+<button onclick="next()">Next</button>
+</section>
+
+<script src="quiz.js"></script>
+</body>
+</html>
