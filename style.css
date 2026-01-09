@@ -1,0 +1,109 @@
+body {
+ margin:0;
+ font-family:Segoe UI, Arial;
+ background:#f4f6ff;
+}
+
+/* HERO IMAGE */
+.hero-img {
+ background:url("images/hero.jpg") center/cover no-repeat;
+ height:60vh;
+ position:relative;
+}
+
+.hero-text {
+ background:rgba(0,0,0,0.6);
+ color:white;
+ position:absolute;
+ bottom:0;
+ width:100%;
+ text-align:center;
+ padding:30px;
+}
+
+/* FEATURES */
+.features {
+ display:flex;
+ justify-content:center;
+ gap:15px;
+ padding:30px;
+ flex-wrap:wrap;
+}
+
+.feature-card {
+ background:white;
+ padding:20px;
+ border-radius:12px;
+ box-shadow:0 5px 15px rgba(0,0,0,0.15);
+ font-size:18px;
+}
+
+/* LOGIN */
+.login-section {
+ display:flex;
+ justify-content:center;
+ padding:40px;
+}
+
+.login-card {
+ background:white;
+ padding:30px;
+ border-radius:15px;
+ width:300px;
+ box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+input, button {
+ width:100%;
+ padding:10px;
+ margin-top:10px;
+}
+
+/* HEADER */
+header {
+ background:#667eea;
+ color:white;
+ padding:15px;
+ text-align:center;
+}
+
+/* STUDENTS */
+.students {
+ text-align:center;
+ padding:20px;
+}
+
+.student-row img {
+ width:90px;
+ height:90px;
+ border-radius:50%;
+ margin:10px;
+ object-fit:cover;
+ box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* VIDEO */
+.video iframe {
+ width:100%;
+ height:260px;
+}
+
+/* QUIZ */
+.quiz-card {
+ background:white;
+ margin:20px;
+ padding:20px;
+ border-radius:12px;
+}
+
+.opt {
+ width:100%;
+ padding:10px;
+ margin:8px 0;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+ .features{flex-direction:column}
+ .hero-img{height:40vh}
+}
