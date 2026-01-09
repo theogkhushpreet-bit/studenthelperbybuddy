@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JEE Physics Class 11</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero-img">
+    <div class="hero-text">
+        <h1>JEE Physics – Class 11</h1>
+        <p>Learn • Practice • Crack JEE</p>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="feature-card">📘 Chapter-wise Practice</div>
+    <div class="feature-card">⏱ Real JEE Timer</div>
+    <div class="feature-card">🎥 Student Discussion Videos</div>
+</section>
+
+<!-- LOGIN -->
+<section class="login-section">
+    <div class="login-card">
+        <h2>Start Your Preparation</h2>
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="login()">Start Now</button>
+    </div>
+</section>
+
+<script>
+function login(){
+ let n=document.getElementById("name").value;
+ if(n){
+  localStorage.setItem("student",n);
+  window.location.href="quiz.html";
+ }
+}
+</script>
+
+</body>
+</html>
